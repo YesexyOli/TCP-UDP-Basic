@@ -1,0 +1,24 @@
+#
+# NAME : OLIVIER METZINGER
+# STUDENT ID : 50191643
+#
+
+
+from socket import *
+
+serverName = 'nsl2.cau.ac.kr'
+serverPort = 0
+
+clientSocket = socket(AF_INET, SOCK_STREAM)
+clientSocket.connect((serverName, serverPort))
+
+print("The client is running on port", clientSocket.getsockname()[1])
+
+message = input('Input lowercase sentence: ')
+
+clientSocket.send(message.encode())
+
+modifiedMessage = clientSocket.recv(2048)
+print('Reply from server:', modifiedMessage.decode())
+
+clientSocket.close()
