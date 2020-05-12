@@ -9,7 +9,7 @@ import time
 import sys
 
 serverName = '127.0.0.1'
-serverPort = 7722
+serverPort = 31643
 gettime = lambda: time.time() * 1000
 
 clientSocket = socket(AF_INET, SOCK_STREAM)

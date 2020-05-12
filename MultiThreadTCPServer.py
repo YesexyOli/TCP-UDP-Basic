@@ -8,7 +8,7 @@ import _thread
 CLIENT_NUMBERING = 0
 CUR_CLIENT = 0
 
-serverPort = 7722
+serverPort = 31643
 gettime = lambda: time.time()
 serverSocket = socket(AF_INET, SOCK_STREAM)
 serverSocket.bind(('', serverPort))
