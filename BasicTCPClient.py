@@ -61,6 +61,7 @@ def start_socket():
             sys.exit()
         else:
             start_socket()
+        clientSocket.close()
 
 if __name__ == '__main__':
     try:
