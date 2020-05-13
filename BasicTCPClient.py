@@ -8,8 +8,8 @@ from socket import *
 import time
 import sys
 
-serverName = '127.0.0.1'
-serverPort = 31643
+serverName = 'nsl2.cau.ac.kr'
+serverPort = 0
 gettime = lambda: time.time() * 1000
 
 clientSocket = socket(AF_INET, SOCK_STREAM)
