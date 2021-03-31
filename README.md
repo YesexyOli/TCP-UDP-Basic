@@ -1,6 +1,3 @@
 # TCP-UDP-Basic
 
-TCP/UDP Basic
-
-
-[CAU] Project
+TCP/UDP Python
